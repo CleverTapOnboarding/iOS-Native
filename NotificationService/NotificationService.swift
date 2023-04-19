@@ -17,12 +17,16 @@ class NotificationService: CTNotificationServiceExtension {
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         CleverTap.setDebugLevel(CleverTapLogLevel.debug.rawValue)
 
-        let userDefaults = UserDefaults(suiteName: "group.sampleios")
-        let testUserId = userDefaults?.object(forKey: "identity")
+        let userDefaults = UserDefaults(suiteName: "group.nativeios")
+        let userId = userDefaults?.object(forKey: "identity")
     
-        if(testUserId != nil){
-            CleverTap.sharedInstance()?.onUserLogin(testUserId as! [AnyHashable : Any])
-                }
+        if(userId != nil){
+            let profile: Dictionary<String, Any> = [
+                "Identity": userId,         // String or number
+            ]
+            
+            CleverTap.sharedInstance()?.onUserLogin(profile)
+        }
         
         CleverTap.sharedInstance()?.recordNotificationViewedEvent(withData: request.content.userInfo)
         super.didReceive(request, withContentHandler: contentHandler)

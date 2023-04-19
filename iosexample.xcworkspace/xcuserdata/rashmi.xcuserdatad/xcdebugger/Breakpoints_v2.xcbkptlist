@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "54A2B8E7-F96A-4591-878E-6D366104E8ED"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosexample/ViewController.swift"
@@ -100,33 +100,33 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "34D4AD8C-ADC3-40CA-AD55-BBDDB1B720B2 - 95668e2ddce26590"
+                  uuid = "34D4AD8C-ADC3-40CA-AD55-BBDDB1B720B2 - de14f4bb04128e92"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "iosexample.ViewController.displayUnitsUpdated(Swift.Array&lt;__C.CleverTapDisplayUnit&gt;) -&gt; ()"
                   moduleName = "iosexample"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rashmi/Desktop/sampleios/iosexample%20copy%202/iosexample/ViewController.swift"
+                  urlString = "file:///Users/rashmi/Desktop/sampleios/iosexampleCT/iosexample/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "284"
-                  endingLineNumber = "284"
-                  offsetFromSymbolStart = "4032">
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "4036">
                </Location>
                <Location
-                  uuid = "34D4AD8C-ADC3-40CA-AD55-BBDDB1B720B2 - 57a4bf19c5c85dbf"
+                  uuid = "34D4AD8C-ADC3-40CA-AD55-BBDDB1B720B2 - 1cd6c58f1d38b6b9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in iosexample.ViewController.displayUnitsUpdated(Swift.Array&lt;__C.CleverTapDisplayUnit&gt;) -&gt; ()"
                   moduleName = "iosexample"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rashmi/Desktop/sampleios/iosexample%20copy%202/iosexample/ViewController.swift"
+                  urlString = "file:///Users/rashmi/Desktop/sampleios/iosexampleCT/iosexample/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "285"
-                  endingLineNumber = "285"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
                   offsetFromSymbolStart = "100">
                </Location>
             </Locations>
@@ -145,6 +145,22 @@
             startingLineNumber = "17"
             endingLineNumber = "17"
             landmarkName = "didReceive(_:withContentHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D70F068-633D-4BAF-8EAE-5018D1BCF5DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CleverTap-iOS-SDK/CleverTapSDK/CleverTap.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4615"
+            endingLineNumber = "4615"
+            landmarkName = "-didHandleDisplayUnitTestFromPushNotificaton:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

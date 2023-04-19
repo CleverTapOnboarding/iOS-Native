@@ -73,7 +73,7 @@ class ViewController: UIViewController, CleverTapInboxViewControllerDelegate, Cl
         ]
         
         CleverTap.sharedInstance()?.onUserLogin(profile)
-        var userDefaults = UserDefaults(suiteName: "group.sampleios")!
+        var userDefaults = UserDefaults(suiteName: "group.nativeios")!
         userDefaults.set(_idfield, forKey:"identity" )
         userDefaults.synchronize()
     }
