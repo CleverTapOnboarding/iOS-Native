@@ -69,12 +69,13 @@ class ViewController: UIViewController, CleverTapInboxViewControllerDelegate, Cl
             "MSG-email": false,           // Disable email notifications
             "MSG-push": true,             // Enable push notifications
             "MSG-sms": false,             // Disable SMS notifications
-            "MSG-whatsapp": true,         // Enable WhatsApp notifications
+            "MSG-whatsapp": false,         // Enable WhatsApp notifications
         ]
         
         CleverTap.sharedInstance()?.onUserLogin(profile)
         var userDefaults = UserDefaults(suiteName: "group.nativeios")!
         userDefaults.set(_idfield, forKey:"identity" )
+        userDefaults.set(_emailfield, forKey:"email" )
         userDefaults.synchronize()
     }
     @IBAction func pushProfile(_ sender: UIButton) {

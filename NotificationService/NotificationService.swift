@@ -19,10 +19,12 @@ class NotificationService: CTNotificationServiceExtension {
 
         let userDefaults = UserDefaults(suiteName: "group.nativeios")
         let userId = userDefaults?.object(forKey: "identity")
+        let userEmail = userDefaults?.object(forKey: "email")
     
         if(userId != nil){
             let profile: Dictionary<String, Any> = [
-                "Identity": userId,         // String or number
+                "Identity": userId as Any,         // String or number
+                "Email":userEmail as Any
             ]
             
             CleverTap.sharedInstance()?.onUserLogin(profile)
